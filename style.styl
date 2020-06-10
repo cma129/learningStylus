@@ -1,5 +1,12 @@
-blue = #475cd1
+@import 'styl/variables'
+@import 'styl/mixins'
 
 body
   background blue
-  
+  color red
+  border solid 1px @color
+  main
+    color blue
+    border solid 1px @color
+    border-radius 20px
+    cf()
