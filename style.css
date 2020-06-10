@@ -2,11 +2,67 @@ margin-top unit(var,
 'px') {
   background: #00f;
 }
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
 body {
-  background: #475cd1;
+  margin: 0;
+}
+article,
+details,
+section,
+summary,
+aside,
+main,
+menu,
+nav,
+figcaption,
+figure,
+footer,
+header,
+hgroup {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+body {
+  background: linear-gradient(top, #fff, #000);
+  -webkit-background: linear-gradient(top, #fff, #000);
+  -moz-background: linear-gradient(top, #fff, #000);
   color: #be2525;
-  border: solid 1px #be2525;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  border: 1px solid #be2525;
   margin-left: 4px;
+}
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  body {
+    color: #be2525;
+  }
+}
+@media only screen and (max-width: 700px) {
+  body {
+    color: #475cd1;
+  }
+  body main {
+    color: #475cd1;
+  }
 }
 body main {
   margin: 10px 100px 200px;
@@ -20,11 +76,19 @@ body main {
   -moz-border-radius: 20px;
   zoom: 1;
 }
-body main:after,
-body main:before {
+body main:before,
+body main:after {
   content: "";
   display: table;
 }
 body main:after {
   clear: both;
+}
+body main a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  text-shadow: -1px -1px 0 #475cd1, 1px -1px 0 #475cd1, -1px 1px 0 #475cd1, 1px 1px 0 #475cd1;
 }
