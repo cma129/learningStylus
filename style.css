@@ -2,8 +2,11 @@ body {
   background: #475cd1;
   color: #be2525;
   border: solid 1px #be2525;
+  margin-left: 4px;
 }
 body main {
+  margin: 10px 100px 200px;
+  margin-left: 4px;
   color: #475cd1;
   border: solid 1px #475cd1;
   -webkit-border-radius: 20px;
