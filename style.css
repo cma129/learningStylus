@@ -1,3 +1,7 @@
+margin-top unit(var,
+'px') {
+  background: #00f;
+}
 body {
   background: #475cd1;
   color: #be2525;
@@ -6,11 +10,14 @@ body {
 }
 body main {
   margin: 10px 100px 200px;
-  margin-left: 4px;
   color: #475cd1;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
   border: solid 1px #475cd1;
-  -webkit-border-radius: 20px;
   border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
   zoom: 1;
 }
 body main:after,
