@@ -1,42 +1,45 @@
-@import 'typographic'
-@import 'nib'
-@import 'styl/*'
-
-normalize-base()
-normalize-html5()
-
-t-presets(perfect-fourth)
-
-add(a, b, c = a)
-  a + b + c
-
-marg(a, b)
-  return a a*10 a*b
-
-rupture.scale = 0 400px 600px 800px 1050px 1800px
-t-headers(helvetica)
-
 body
-  background linear-gradient(top, white, black)
-  color red
-  fixed top 20px left 20px
-  border @color
-  margin-left add(1px,2)
-  font-family futura
-  +at(2)
-    color red
-  +below(700px)
-    color blue
-    main
-      color blue
-  main
-    margin marg(10px, 20)
-    color blue
-    transition(all 0.2s ease)
-    border solid 1px @color
-    border-radius 20px
-    test(11)
-    clearfix()
-    a
-      overflow ellipsis
-      shadow-stroke(blue)
+  background red
+  
+// @import 'typographic'
+// @import 'nib'
+// @import 'styl/*'
+
+// normalize-base()
+// normalize-html5()
+
+// t-presets(perfect-fourth)
+
+// add(a, b, c = a)
+//   a + b + c
+
+// marg(a, b)
+//   return a a*10 a*b
+
+// rupture.scale = 0 400px 600px 800px 1050px 1800px
+// t-headers(helvetica)
+
+// body
+//   background linear-gradient(top, white, black)
+//   color red
+//   fixed top 20px left 20px
+//   border @color
+//   margin-left add(1px,2)
+//   font-family futura
+//   +at(2)
+//     color red
+//   +below(700px)
+//     color blue
+//     main
+//       color blue
+//   main
+//     margin marg(10px, 20)
+//     color blue
+//     transition(all 0.2s ease)
+//     border solid 1px @color
+//     border-radius 20px
+//     test(11)
+//     clearfix()
+//     a
+//       overflow ellipsis
+//       shadow-stroke(blue)
