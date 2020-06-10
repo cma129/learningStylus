@@ -1,3 +1,4 @@
+@import 'typographic'
 @import 'nib'
 @import 'styl/*'
 
@@ -11,6 +12,7 @@ marg(a, b)
   return a a*10 a*b
 
 rupture.scale = 0 400px 600px 800px 1050px 1800px
+t-headers(helvetica)
 
 body
   background linear-gradient(top, white, black)
@@ -18,6 +20,7 @@ body
   fixed top 20px left 20px
   border @color
   margin-left add(1px,2)
+  font-family futura
   +at(2)
     color red
   +below(700px)
